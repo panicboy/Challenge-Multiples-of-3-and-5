@@ -7,6 +7,11 @@ exports.sumOfAMultiple = function( n ) {
   var sum = 0;
 
   // do your work here
+  for (var num = 1; num < n; num++) {
+    if(num % 3 === 0 || num % 5 === 0){
+      sum += num;
+    }
+  }
 
   return sum;
 };
